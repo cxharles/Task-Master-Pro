@@ -1,0 +1,11 @@
+# Terraform
+.terraform 
+
+# visual studio 
+.vs/
+
+#  compiled source
+*.com 
+*.o 
+*.dll 
+*.exe
