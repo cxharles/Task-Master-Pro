@@ -19,20 +19,28 @@ stages:
   - job: Build
     displayName: Build
     
-    pool: az-project
+    pool: 
+      name: 'az-project' # Ensure this is the correct agent pool name
       
     steps:
-    - task: Maven@4
+    - task: JavaToolInstaller@0
       inputs:
-         mavenPomFile: 'pom.xml'
-         goals: 'install'
-         publishJUnitResults: false
-         javaHomeOption: 'JDKVersion'
-         mavenVersionOption: 'Default'
-         mavenAuthenticateFeed: false
-         effectivePomSkip: false
-         sonarQubeRunAnalysis: false
+        versionSpec: '11'
+        jdkArchitectureOption: 'x64'
 
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'pom.xml'
+        goals: 'clean install'
+        publishJUnitResults: true
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.11'
+        mavenVersionOption: 'Default'
+        mavenAuthenticateFeed: false
+        effectivePomSkip: false
+        sonarQubeRunAnalysis: false
+   
     - task: Docker@2
       inputs:
         containerRegistry: 'dockerhub'
@@ -41,4 +49,3 @@ stages:
         Dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
-
