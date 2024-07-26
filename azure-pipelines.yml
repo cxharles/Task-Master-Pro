@@ -18,8 +18,9 @@ stages:
   jobs:
   - job: Build
     displayName: Build
-    pool:
-      vmImage: ubuntu-latest
+    
+    pool: az-project
+      
     steps:
   
     - task: Docker@2
