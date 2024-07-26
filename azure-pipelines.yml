@@ -18,8 +18,9 @@ stages:
   jobs:
   - job: Build
     displayName: Build
-    pool:
-      vmImage: az-project
+    
+    pool: az-project
+      
     steps:
     - task: Maven@4
       inputs:
