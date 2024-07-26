@@ -23,11 +23,6 @@ stages:
       name: 'az-project' # Ensure this is the correct agent pool name
       
     steps:
-    - task: JavaToolInstaller@0
-      inputs:
-        versionSpec: '11'
-        jdkArchitectureOption: 'x64'
-
     - task: Maven@3
       inputs:
         mavenPomFile: 'pom.xml'
@@ -35,7 +30,6 @@ stages:
         publishJUnitResults: true
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
         javaHomeOption: 'JDKVersion'
-        jdkVersionOption: '1.11'
         mavenVersionOption: 'Default'
         mavenAuthenticateFeed: false
         effectivePomSkip: false
