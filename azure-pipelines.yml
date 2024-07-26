@@ -18,11 +18,20 @@ stages:
   jobs:
   - job: Build
     displayName: Build
-    
-    pool: az-project
-      
+    pool:
+      vmImage: az-project
     steps:
-  
+    - task: Maven@4
+      inputs:
+         mavenPomFile: 'pom.xml'
+         goals: 'install'
+         publishJUnitResults: false
+         javaHomeOption: 'JDKVersion'
+         mavenVersionOption: 'Default'
+         mavenAuthenticateFeed: false
+         effectivePomSkip: false
+         sonarQubeRunAnalysis: false
+
     - task: Docker@2
       inputs:
         containerRegistry: 'dockerhub'
@@ -31,3 +40,4 @@ stages:
         Dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
+
