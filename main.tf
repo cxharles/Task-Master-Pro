@@ -7,6 +7,14 @@ provider "azurerm" {
   subscription_id            = "MWEzYjBhY2ItOTFmMi00MmZlLTg2NDEtNzJmYzYwMjEwNzFi"
 }
 
+terraform {
+    backend "azurerm" {
+        resource_group_name  = "az-dev-project"
+        storage_account_name = "charlesbackendstorage"
+        container_name       = "tfstate"
+        key                  = "terraform.tfstate"
+    }
+}
 resource "azurerm_resource_group" "az-dev-env" {
   name     = "az-dev-project"
   location = "canadacentral"
