@@ -1,10 +1,10 @@
 provider "azurerm" {
   features {}
   skip_provider_registration = true
-  client_id                  = "MWU0OTc2ZjMtYTgwYi00MDU5LWI3YmEtMGRhN2Y3MzYwMzM2"
-  client_secret              = "R3dnOFF+Z0xrTTAyelJLX3dUS3VlM3JNR0VJU093eXdwYXJPNmFqTg=="
-  tenant_id                  = "YWQ4MTc2YjEtMjdhZS00ZjgzLWE1YjQtZjhmOWUwOTQzYzQz"
-  subscription_id            = "MWEzYjBhY2ItOTFmMi00MmZlLTg2NDEtNzJmYzYwMjEwNzFi"
+  client_id                  = "1e4976f3-a80b-4059-b7ba-0da7f7360336"
+  client_secret              = "Gwg8Q~gLkM02zRK_wTKue3rMGEISOwywparO6ajN"
+  tenant_id                  = "ad8176b1-27ae-4f83-a5b4-f8f9e0943c43"
+  subscription_id            = "1a3b0acb-91f2-42fe-8641-72fc6021071b"
 }
 
 terraform {
@@ -15,6 +15,12 @@ terraform {
         key                  = "terraform.tfstate"
     }
 }
+
+variable "imagebuild" {
+  type        = string
+  description = "Latest Image Build"
+}
+
 resource "azurerm_resource_group" "az-dev-env" {
   name     = "az-dev-project"
   location = "canadacentral"
@@ -31,7 +37,7 @@ resource "azurerm_container_group" "az-cg-dev-env" {
 
   container {
     name   = "todo-app"
-    image  = "charlesjatto/todo-app"
+    image  = "charlesjatto/todo-app:{}"
     cpu    = "1"
     memory = "1"
 
