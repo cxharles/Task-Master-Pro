@@ -16,11 +16,6 @@ terraform {
     }
 }
 
-variable "imagebuild" {
-  type        = string
-  description = "Latest Image Build"
-}
-
 resource "azurerm_resource_group" "az-dev-env" {
   name     = "az-dev-project"
   location = "canadacentral"
@@ -37,7 +32,7 @@ resource "azurerm_container_group" "az-cg-dev-env" {
 
   container {
     name   = "todo-app"
-    image  = "charlesjatto/todo-app:${var.imagebuild}"
+    image  = "charlesjatto/todo-app"
     cpu    = "1"
     memory = "1"
 
