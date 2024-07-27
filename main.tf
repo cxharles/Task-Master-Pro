@@ -1,10 +1,10 @@
 provider "azurerm" {
   features {}
   skip_provider_registration = true
-  client_id                  = "1e4976f3-a80b-4059-b7ba-0da7f7360336"
-  client_secret              = "Gwg8Q~gLkM02zRK_wTKue3rMGEISOwywparO6ajN"
-  tenant_id                  = "ad8176b1-27ae-4f83-a5b4-f8f9e0943c43"
-  subscription_id            = "1a3b0acb-91f2-42fe-8641-72fc6021071b"
+  client_id                  = ""
+  client_secret              = ""
+  tenant_id                  = ""
+  subscription_id            = ""
 }
 
 terraform {
@@ -26,7 +26,7 @@ resource "azurerm_container_group" "az-cg-dev-env" {
   location            = azurerm_container_group.az-cg-dev-env.location
   resource_group_name = azurerm_resource_group.az-dev-env.name
 
-  ip_address_type = "public"
+  ip_address_type = "Public"
   dns_name_label  = "azproject"
   os_type         = "Linux"
 
