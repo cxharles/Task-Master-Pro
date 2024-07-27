@@ -37,7 +37,7 @@ resource "azurerm_container_group" "az-cg-dev-env" {
 
   container {
     name   = "todo-app"
-    image  = "charlesjatto/todo-app:{}"
+    image  = "charlesjatto/todo-app:${var.imagebuild}"
     cpu    = "1"
     memory = "1"
 
