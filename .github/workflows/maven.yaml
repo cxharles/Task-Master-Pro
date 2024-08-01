@@ -25,12 +25,6 @@ jobs:
     - name: Trivy FS scan
       run: trivy fs --format table -o fs.html .
 
-    - name: SonarQube Scan
-      uses: SonarSource/sonarqube-scan-action@v2.3.0
-      env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v3
       
