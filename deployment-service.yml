@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: taskmaster
-          image: adijaiswal/taskmaster:latest # Image that will be used to containers in the cluster
+          image: charlesjatto/devtaskmaster:latest # Image that will be used to containers in the cluster
           imagePullPolicy: Always
           ports:
             - containerPort: 8080 # The port that the container is running on in the cluster
@@ -32,5 +32,7 @@ spec:
   ports:
     - protocol: "TCP"
       port: 80
-      targetPort: 8080 
-  type: LoadBalancer # type of the service.
+      targetPort: 8080
+      nodePort: 30080 # Optional: specify a custom NodePort (range: 30000-32767)
+  type: NodePort # type of the service.
+
