@@ -64,6 +64,10 @@ stages:
     - script: |
         set -e
         cd azure-Tf-Infra
+
+        # Import the existing resource group using variables
+        terraform import azurerm_resource_group.az-test /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg
+        
         terraform init -input=false
         terraform apply -input=false --auto-approve
       name: 'RunTerraform'
