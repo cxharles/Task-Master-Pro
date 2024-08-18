@@ -63,7 +63,7 @@ stages:
     steps:
     - script: |
         set -e
-
+        cd azure-Tf-Infra
         terraform init -input=false
         terraform apply -input=false --auto-approve
       name: 'RunTerraform'
