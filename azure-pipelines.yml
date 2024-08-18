@@ -74,3 +74,27 @@ stages:
         ARM_TENANT_ID: $(ARM_TENANT_ID)
         ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
         TF_VAR_imagebuild: $(tag)
+- stage: Destroy
+  displayName: 'Destroying Terraform Infrastructure'
+  dependsOn: Provision
+  jobs:
+  - job: Destroy
+    displayName: 'Destroy Infrastructure'
+    pool:
+      name: task-master
+    variables:
+    - group: TeraformEnvVars
+    steps:
+    - script: |
+        set -e
+        cd azure-Tf-Infra
+        terraform init -input=false
+        terraform destroy -input=false --auto-approve
+      name: 'RunTerraformDestroy'
+      displayName: 'Run Terraform Destroy'
+      env:
+        ARM_CLIENT_ID: $(ARM_CLIENT_ID)
+        ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
+        ARM_TENANT_ID: $(ARM_TENANT_ID)
+        ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
+        TF_VAR_imagebuild: $(tag)
