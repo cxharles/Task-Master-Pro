@@ -71,6 +71,9 @@ stages:
 
         # Import the existing resource group using variables
         terraform import azurerm_resource_group.az-test /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg
+        terraform import azurerm_storage_account.storage_account /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg/providers/Microsoft.Storage/storageAccounts/charleslandmark2023
+        terraform import azurerm_container_group.az-test-container /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg/providers/Microsoft.ContainerInstance/containerGroups/taskmaster
+
 
         terraform apply -input=false --auto-approve
 
@@ -100,7 +103,7 @@ stages:
 
         # Initialize Terraform
         terraform init -input=false
-        
+
         terraform destroy -input=false --auto-approve
       name: 'RunTerraformDestroy'
       displayName: 'Run Terraform Destroy'
