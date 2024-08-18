@@ -50,6 +50,7 @@ stages:
         Dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
+
 - stage: Provision
   displayName: 'Terraforming on Azure...'
   dependsOn: Build
@@ -65,11 +66,14 @@ stages:
         set -e
         cd azure-Tf-Infra
 
+        # Initialize Terraform
+        terraform init -input=false
+
         # Import the existing resource group using variables
         terraform import azurerm_resource_group.az-test /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg
-        
-        terraform init -input=false
+
         terraform apply -input=false --auto-approve
+
       name: 'RunTerraform'
       displayName: 'Run Terraform'
       env:
@@ -78,6 +82,7 @@ stages:
         ARM_TENANT_ID: $(ARM_TENANT_ID)
         ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
         TF_VAR_imagebuild: $(tag)
+
 - stage: Destroy
   displayName: 'Destroying Terraform Infrastructure'
   dependsOn: Provision
@@ -92,7 +97,10 @@ stages:
     - script: |
         set -e
         cd azure-Tf-Infra
+
+        # Initialize Terraform
         terraform init -input=false
+        
         terraform destroy -input=false --auto-approve
       name: 'RunTerraformDestroy'
       displayName: 'Run Terraform Destroy'
