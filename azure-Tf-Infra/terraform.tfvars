@@ -1,0 +1,8 @@
+rgname                   = "project_rg"
+location                 = "canadacentral"
+container_name           = "task_master_container"
+storage_account_name     = "charleslandmark2023"
+account_tier             = "Standard"
+account_replication_type = "LRS"
+storage_container_name   = "prod-tfstate"
+container_access_type    = "blob"
