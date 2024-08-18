@@ -45,8 +45,32 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'taskmasterdockerhub'
-        repository: 'charlesjatto/taskmaster'
+        repository: 'charlesjatto/myapp'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
+- stage: Provision
+  displayName: 'Terraforming on Azure...'
+  dependsOn: Build
+  jobs:
+  - job: Provision
+    displayName: 'Provisioning Container Instance'
+    pool:
+      name: task-master
+    variables: 
+    - group: TeraformEnvVars
+    steps:
+    - script: |
+        set -e
+
+        terraform init -input=false
+        terraform apply -input=false --auto-approve
+      name: 'RunTerraform'
+      displayName: 'Run Terraform'
+      env:
+        ARM_CLIENT_ID: $(ARM_CLIENT_ID)
+        ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
+        ARM_TENANT_ID: $(ARM_TENANT_ID)
+        ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
+        TF_VAR_imagebuild: $(tag)
