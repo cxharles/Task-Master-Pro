@@ -1,0 +1,1710 @@
+[2024-08-18 16:51:39Z INFO Program] Version: 3.243.0
+[2024-08-18 16:51:39Z INFO Program] Commit: d429c24723174c88f70c02beac64427b4ebe71e3
+[2024-08-18 16:51:39Z INFO Program] Culture: en-CA
+[2024-08-18 16:51:39Z INFO Program] UI Culture: en-CA
+[2024-08-18 16:51:39Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:39Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:39Z INFO HostContext] Well known config file 'Proxy': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.proxy'
+[2024-08-18 16:51:39Z INFO VstsAgentWebProxy] No proxy setting found.
+[2024-08-18 16:51:39Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:39Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:39Z INFO HostContext] Well known config file 'Certificates': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.certificates'
+[2024-08-18 16:51:39Z INFO AgentCertificateManager] No certificate setting found.
+[2024-08-18 16:51:39Z INFO Worker] Waiting to receive the job message from the channel.
+[2024-08-18 16:51:39Z INFO Worker] Message received.
+[2024-08-18 16:51:39Z INFO Worker] Deactivating vso commands in job message variables.
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-08-18 16:51:39Z INFO HostContext] Setting up regex for origin: Worker_AddingMaskHint.
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: AddingMaskHint
+[2024-08-18 16:51:39Z INFO HostContext] Setting up regex for origin: Worker_AddingMaskHint.
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: AddingMaskHint
+[2024-08-18 16:51:39Z INFO HostContext] Setting up regex for origin: Worker_AddingMaskHint.
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: AddingMaskHint
+[2024-08-18 16:51:39Z INFO HostContext] Setting up regex for origin: Worker_AddingMaskHint.
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: AddingMaskHint
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: Worker_EndpointAuthorizationParameters_IdSignature
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: Worker_EndpointAuthorizationParameters_RepositoryIds
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: Worker_EndpointAuthorizationParameters_AccessToken
+[2024-08-18 16:51:39Z INFO HostContext] Setting up value for origin: Worker_EndpointAuthorizationParameters_AccessToken
+[2024-08-18 16:51:39Z INFO Worker] Job message:
+ {
+  "mask": [
+    {
+      "type": "regex",
+      "value": ***
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "inputs": {
+        "repository": "self",
+        "fetchDepth": "1"
+      },
+      "type": "task",
+      "reference": {
+        "id": "6d15af64-176c-496d-b583-fd2ae21d4df4",
+        "name": "Checkout",
+        "version": "1.0.0",
+        "buildConfig": "Default"
+      },
+      "isServerOwned": false,
+      "id": "19c3a4d5-6dc7-5f63-50ac-a1d7a7fa772a",
+      "name": "__system_1",
+      "displayName": "Checkout"
+    },
+    {
+      "environment": {
+        "ARM_CLIENT_ID": "$(ARM_CLIENT_ID)",
+        "ARM_CLIENT_SECRET": "$(ARM_CLIENT_SECRET)",
+        "ARM_TENANT_ID": "$(ARM_TENANT_ID)",
+        "ARM_SUBSCRIPTION_ID": "$(ARM_SUBSCRIPTION_ID)",
+        "TF_VAR_imagebuild": "$(tag)"
+      },
+      "inputs": {
+        "script": "set -e\ncd azure-Tf-Infra\n\n# Initialize Terraform\nterraform init -input=false\n\n# Import the existing resource group using variables\nterraform import azurerm_resource_group.az-test /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg\nterraform import azurerm_storage_account.storage_account /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg/providers/Microsoft.Storage/storageAccounts/charleslandmark2023\nterraform import azurerm_container_group.az-test-container /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg/providers/Microsoft.ContainerInstance/containerGroups/taskmaster\n\n\nterraform apply -input=false --auto-approve\n"
+      },
+      "type": "task",
+      "reference": {
+        "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+        "name": "CmdLine",
+        "version": "2.237.1",
+        "buildConfig": "Node20-225"
+      },
+      "isServerOwned": true,
+      "id": "43542e4f-acc2-5a42-5433-d691ccc99a55",
+      "name": "RunTerraform",
+      "displayName": "Run Terraform"
+    }
+  ],
+  "variables": {
+    "tag": {
+      "value": "$(Build.BuildId)"
+    },
+    "resources.triggeringCategory": {
+      "value": ""
+    },
+    "resources.triggeringAlias": {
+      "value": ""
+    },
+    "ARM_CLIENT_ID": {
+      "value": "5208e3f0-f8d6-402e-b170-480a7875fef9"
+    },
+    "ARM_CLIENT_SECRET": {
+      "value": "***",
+      "isSecret": true
+    },
+    "ARM_TENANT_ID": {
+      "value": "ad8176b1-27ae-4f83-a5b4-f8f9e0943c43"
+    },
+    "ARM_SUBSCRIPTION_ID": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system": {
+      "value": "build",
+      "isReadOnly": true
+    },
+    "system.hosttype": {
+      "value": "build",
+      "isReadOnly": true
+    },
+    "system.servertype": {
+      "value": "Hosted",
+      "isReadOnly": true
+    },
+    "system.culture": {
+      "value": "en-US",
+      "isReadOnly": true
+    },
+    "system.collectionId": {
+      "value": "407840bf-5e9d-466d-a79c-6c02b1d9e7cc",
+      "isReadOnly": true
+    },
+    "system.collectionUri": {
+      "value": "https://dev.azure.com/az-charles/",
+      "isReadOnly": true
+    },
+    "system.teamFoundationCollectionUri": {
+      "value": "https://dev.azure.com/az-charles/",
+      "isReadOnly": true
+    },
+    "system.taskDefinitionsUri": {
+      "value": "https://dev.azure.com/az-charles/",
+      "isReadOnly": true
+    },
+    "system.pipelineStartTime": {
+      "value": "2024-08-18 16:51:34+00:00",
+      "isReadOnly": true
+    },
+    "system.teamProject": {
+      "value": "Task-Master-Project",
+      "isReadOnly": true
+    },
+    "system.teamProjectId": {
+      "value": "d17f27af-59cd-44b2-928e-55772e4450a7",
+      "isReadOnly": true
+    },
+    "system.definitionId": {
+      "value": "7",
+      "isReadOnly": true
+    },
+    "build.definitionName": {
+      "value": "cxharles.Task-Master-Pro",
+      "isReadOnly": true
+    },
+    "build.repository.id": {
+      "value": "cxharles/Task-Master-Pro",
+      "isReadOnly": true
+    },
+    "build.repository.name": {
+      "value": "cxharles/Task-Master-Pro",
+      "isReadOnly": true
+    },
+    "build.repository.uri": {
+      "value": "https://github.com/cxharles/Task-Master-Pro",
+      "isReadOnly": true
+    },
+    "build.definitionVersion": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "USE_MSDEPLOY_TOKEN_AUTH": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.AgentEnablePipelineArtifactLargeChunkSize": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.CleanupPsModulesInPowershell": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.ContinueAfterCancelProcessTreeKillAttempt": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.DockerActionRetries": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.EnableAdditionalMaskingRegexes": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.EnableIssueSourceValidation": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.EnableResourceUtilizationWarnings": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.FailDeprecatedBuildTask": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.FailDeprecatedTask": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.FailJobWhenAgentDies": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.FixPossibleGitOutOfMemoryProblem": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.ForceUpdateToLatest2Version": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.IgnoreVSTSTaskLib": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.LogTaskNameInUserAgent": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.LogToBlobstorageService": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.MountWorkspace": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.ReadOnlyVariables": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.Rosetta2Warning": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UploadBuildArtifactsToBlob": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UploadTimelineAttachmentsToBlob": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseDockerComposeV2CompatibleMode": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseFetchFilterInCheckoutTask": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseGitLongPaths": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseInteropToFindParentProcess": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseLatestGitVersion": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseMsalLibrary": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseMsdeployTokenAuth": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseWorkspaceId": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Tasks.CopyFilesOverSSHV0UseQueue": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Tasks.RetireAzureRMPowerShellModule": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "build.definitionFolderPath": {
+      "value": "\\",
+      "isReadOnly": true
+    },
+    "VSTSAGENT_CONTINUE_AFTER_CANCEL_PROCESSTREEKILL_ATTEMPT": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "VSTSAGENT_DOCKER_ACTION_RETRIES": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "USE_MSAL": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_75787_ENABLE_COLLECT": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_75787_ENABLE_NEW_PH_LOGIC": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_AGENT_CHECK_FOR_TASK_DEPRECATION": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_AGENT_MOUNT_WORKSPACE": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_AGENT_IGNORE_VSTSTASKLIB": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_PS_ENABLE_INVOKE_PROCESS": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "FAIL_DEPRECATED_TASK": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_AGENT_LOG_TASKNAME_IN_USERAGENT": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AGENT_USE_FETCH_FILTER_IN_CHECKOUT_TASK": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_75787_ENABLE_NEW_LOGIC": {
+      "value": "false",
+      "isReadOnly": true
+    },
+    "AZP_75787_ENABLE_NEW_LOGIC_LOG": {
+      "value": "false",
+      "isReadOnly": true
+    },
+    "AGENT_ENABLE_PIPELINEARTIFACT_LARGE_CHUNK_SIZE": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "FAIL_JOB_WHEN_AGENT_DIES": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "USE_LATEST_GIT_VERSION": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "USE_GIT_LONG_PATHS": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "ENABLE_ISSUE_SOURCE_VALIDATION": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "RETIRE_AZURERM_POWERSHELL_MODULE": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "FAIL_DEPRECATED_BUILD_TASK": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_AGENT_USE_INTEROP_TO_FIND_PARENT_PROCESS": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "ROSETTA2_WARNING": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "COPYFILESOVERSSHV0_USE_QUEUE": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "build.queuedBy": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.queuedById": {
+      "value": "00000002-0000-8888-8000-000000000000",
+      "isReadOnly": true
+    },
+    "build.requestedFor": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.requestedForId": {
+      "value": "00000002-0000-8888-8000-000000000000",
+      "isReadOnly": true
+    },
+    "build.requestedForEmail": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.sourceVersionMessage": {
+      "value": "updated azure-pipeline file",
+      "isReadOnly": true
+    },
+    "build.sourceVersion": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.sourceBranch": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.sourceBranchName": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.reason": {
+      "value": "IndividualCI",
+      "isReadOnly": true
+    },
+    "system.pullRequest.isFork": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "system.jobParallelismTag": {
+      "value": "Private",
+      "isReadOnly": true
+    },
+    "system.enableAccessToken": {
+      "value": "SecretVariable",
+      "isReadOnly": true
+    },
+    "MSDEPLOY_HTTP_USER_AGENT": {
+      "value": "VSTS_407840bf-5e9d-466d-a79c-6c02b1d9e7cc_build_7_0",
+      "isReadOnly": true
+    },
+    "AZURE_HTTP_USER_AGENT": {
+      "value": "VSTS_407840bf-5e9d-466d-a79c-6c02b1d9e7cc_build_7_0",
+      "isReadOnly": true
+    },
+    "build.buildId": {
+      "value": "64",
+      "isReadOnly": true
+    },
+    "build.buildUri": {
+      "value": "vstfs:///Build/Build/64",
+      "isReadOnly": true
+    },
+    "build.buildNumber": {
+      "value": "20240818.8",
+      "isReadOnly": true
+    },
+    "build.containerId": {
+      "value": "146328038",
+      "isReadOnly": true
+    },
+    "system.isScheduled": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "system.definitionName": {
+      "value": "cxharles.Task-Master-Pro",
+      "isReadOnly": true
+    },
+    "system.planId": {
+      "value": "4bf86875-0e67-4fc3-a680-c3ce9f729ca9",
+      "isReadOnly": true
+    },
+    "system.timelineId": {
+      "value": "4bf86875-0e67-4fc3-a680-c3ce9f729ca9",
+      "isReadOnly": true
+    },
+    "system.stageDisplayName": {
+      "value": "Terraforming on Azure...",
+      "isReadOnly": true
+    },
+    "system.stageId": {
+      "value": "9fcc2028-8437-5373-7aaf-cf436bb774c4",
+      "isReadOnly": true
+    },
+    "system.stageName": {
+      "value": "Provision",
+      "isReadOnly": true
+    },
+    "system.stageAttempt": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "system.phaseDisplayName": {
+      "value": "Provisioning Container Instance",
+      "isReadOnly": true
+    },
+    "system.phaseId": {
+      "value": "bfe83a18-98cb-5824-6909-4385c6a55f34",
+      "isReadOnly": true
+    },
+    "system.phaseName": {
+      "value": "Provision",
+      "isReadOnly": true
+    },
+    "system.phaseAttempt": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "system.jobIdentifier": {
+      "value": "Provision.Provision.__default",
+      "isReadOnly": true
+    },
+    "system.jobAttempt": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "System.JobPositionInPhase": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "system.jobDisplayName": {
+      "value": "Provisioning Container Instance",
+      "isReadOnly": true
+    },
+    "system.jobId": {
+      "value": "b44120b9-4f64-5e26-ee93-474453e85609",
+      "isReadOnly": true
+    },
+    "system.jobName": {
+      "value": "__default",
+      "isReadOnly": true
+    },
+    "system.jobTimeout": {
+      "value": "60",
+      "isReadOnly": true
+    },
+    "system.accessToken": {
+      "value": ***,
+      "isSecret": true
+    },
+    "agent.retainDefaultEncoding": {
+      "value": "false",
+      "isReadOnly": true
+    },
+    "agent.LogToBlobstorageService": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "agent.UploadBuildArtifactsToBlob": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "agent.UploadTimelineAttachmentsToBlob": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "agent.readOnlyVariables": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "agent.useWorkspaceId": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "system.postLinesSpeed": {
+      "value": "500",
+      "isReadOnly": true
+    },
+    "system.preferRedirectGetContainerItem": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "agent.taskRestrictionsEnforcementMode": {
+      "value": "Enabled",
+      "isReadOnly": true
+    },
+    "System.OidcRequestUri": {
+      "value": "https://dev.azure.com/az-charles/d17f27af-59cd-44b2-928e-55772e4450a7/_apis/distributedtask/hubs/build/plans/4bf86875-0e67-4fc3-a680-c3ce9f729ca9/jobs/b44120b9-4f64-5e26-ee93-474453e85609/oidctoken",
+      "isReadOnly": true
+    },
+    "agent.disablelogplugin.TestResultLogPlugin": {
+      "value": "false",
+      "isReadOnly": true
+    },
+    "agent.disablelogplugin.TestFilePublisherPlugin": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "build.sourceVersionAuthor": {
+      "value": "[PII]",
+      "isReadOnly": true
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "d17f27af-59cd-44b2-928e-55772e4450a7",
+    "planType": "Build",
+    "version": 18,
+    "planId": "4bf86875-0e67-4fc3-a680-c3ce9f729ca9",
+    "planGroup": "Build:d17f27af-59cd-44b2-928e-55772e4450a7:64",
+    "artifactUri": "vstfs:///Build/Build/64",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {
+        "web": {
+          "href": "https://dev.azure.com/az-charles/d17f27af-59cd-44b2-928e-55772e4450a7/_build/definition?definitionId=7"
+        },
+        "self": {
+          "href": "https://dev.azure.com/az-charles/d17f27af-59cd-44b2-928e-55772e4450a7/_apis/build/Definitions/7"
+        }
+      },
+      "id": 7,
+      "name": "cxharles.Task-Master-Pro"
+    },
+    "owner": {
+      "_links": {
+        "web": {
+          "href": "https://dev.azure.com/az-charles/d17f27af-59cd-44b2-928e-55772e4450a7/_build/results?buildId=64"
+        },
+        "self": {
+          "href": "https://dev.azure.com/az-charles/d17f27af-59cd-44b2-928e-55772e4450a7/_apis/build/Builds/64"
+        }
+      },
+      "id": 64,
+      "name": "20240818.8"
+    }
+  },
+  "timeline": {
+    "id": "4bf86875-0e67-4fc3-a680-c3ce9f729ca9",
+    "changeId": 31,
+    "location": null
+  },
+  "jobId": "b44120b9-4f64-5e26-ee93-474453e85609",
+  "jobDisplayName": "Provisioning Container Instance",
+  "jobName": "__default",
+  "jobContainer": null,
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "pipelinesSourceProvider": "github",
+          "AvatarUrl": "https://avatars.githubusercontent.com/u/121370900?v=4"
+        },
+        "id": "1fee8eda-32eb-4a05-a746-c636503c2e52",
+        "name": "cxharles",
+        "type": "GitHub",
+        "owner": "Library",
+        "url": "https://github.com",
+        "createdBy": {
+          "displayName": "azcharles",
+          "url": "https://spsprodcca1.vssps.visualstudio.com/Ac5290264-2170-46d8-ba81-b2fa82aba90a/_apis/Identities/6d2362f2-bc9f-6dc6-b7f1-547d073468c7",
+          "_links": {
+            "avatar": {
+              "href": "https://dev.azure.com/az-charles/_apis/GraphProfile/MemberAvatars/msa.NmQyMzYyZjItYmM5Zi03ZGM2LWI3ZjEtNTQ3ZDA3MzQ2OGM3"
+            }
+          },
+          "id": "6d2362f2-bc9f-6dc6-b7f1-547d073468c7",
+          "uniqueName": "azcharlesdevops@outlook.com",
+          "imageUrl": "https://dev.azure.com/az-charles/_apis/GraphProfile/MemberAvatars/msa.NmQyMzYyZjItYmM5Zi03ZGM2LWI3ZjEtNTQ3ZDA3MzQ2OGM3",
+          "descriptor": "msa.NmQyMzYyZjItYmM5Zi03ZGM2LWI3ZjEtNTQ3ZDA3MzQ2OGM3"
+        },
+        "description": "",
+        "authorization": {
+          "parameters": {
+            "IdToken": "52761077",
+            "IdSignature": "***",
+            "RepositoryIds": "***",
+            "AccessToken": ***
+          },
+          "scheme": "Token"
+        },
+        "isShared": false,
+        "isReady": true
+      },
+      {
+        "data": {
+          "ServerId": "407840bf-5e9d-466d-a79c-6c02b1d9e7cc",
+          "ServerName": "az-charles"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://dev.azure.com/az-charles/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ],
+    "repositories": [
+      {
+        "properties": {
+          "id": "cxharles/Task-Master-Pro",
+          "type": "GitHub",
+          "version": "d3d86be362b6decb7d78c56f290c083ef591a01a",
+          "name": "cxharles/Task-Master-Pro",
+          "ref": "refs/heads/main",
+          "defaultBranch": "refs/heads/main",
+          "externalId": "***",
+          "project": "d17f27af-59cd-44b2-928e-55772e4450a7",
+          "url": "https://github.com:443/cxharles/Task-Master-Pro",
+          "versionInfo": {
+            "author": "[PII]"
+          },
+          "isRoot": true,
+          "checkoutOptions": {
+            "fetchDepth": "1"
+          },
+          "system.istriggeringrepository": true
+        },
+        "alias": "self",
+        "endpoint": {
+          "id": "1fee8eda-32eb-4a05-a746-c636503c2e52"
+        }
+      }
+    ]
+  },
+  "workspace": {}
+}
+[2024-08-18 16:51:39Z INFO JobRunner] Job ID b44120b9-4f64-5e26-ee93-474453e85609
+[2024-08-18 16:51:39Z INFO JobRunner] Creating job server with URL: https://dev.azure.com/az-charles/
+[2024-08-18 16:51:39Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:39Z INFO Worker] Listening for cancel message from the channel.
+[2024-08-18 16:51:39Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2024-08-18 16:51:40Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:41Z INFO JobServerQueue] Start process web console line queue.
+[2024-08-18 16:51:41Z INFO JobServerQueue] Start process file upload queue.
+[2024-08-18 16:51:41Z INFO JobServerQueue] Start process timeline update queue.
+[2024-08-18 16:51:41Z INFO ConfigurationStore] currentAssemblyLocation: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin/Agent.Worker.dll
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO ConfigurationStore] binPath: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO ConfigurationStore] RootFolder: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known config file 'Agent': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.agent'
+[2024-08-18 16:51:41Z INFO ConfigurationStore] ConfigFilePath: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.agent
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known config file 'Credentials': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.credentials'
+[2024-08-18 16:51:41Z INFO ConfigurationStore] CredFilePath: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.credentials
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known config file 'Service': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.service'
+[2024-08-18 16:51:41Z INFO ConfigurationStore] ServiceConfigFilePath: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.service
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known config file 'Autologon': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.autologon'
+[2024-08-18 16:51:41Z INFO ConfigurationStore] AutoLogonSettingsFilePath: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.autologon
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known config file 'Options': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.options'
+[2024-08-18 16:51:41Z INFO ConfigurationStore] RuntimeOptionsFilePath: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.options
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known config file 'SetupInfo': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.setup_info'
+[2024-08-18 16:51:41Z INFO ConfigurationStore] SetupInfoFilePath: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/.setup_info
+[2024-08-18 16:51:41Z INFO ConfigurationStore] Read setting file: 192 chars
+[2024-08-18 16:51:41Z INFO ExecutionContext] WorkspaceIdentifier '0f6feec63456a5a30396ef3c3e9776a1ad31da94' created for repos Microsoft.VisualStudio.Services.Agent.Worker.Build.RepositoryTrackingInfo
+[2024-08-18 16:51:41Z INFO HostContext] Removing short secrets from masking dictionary
+[2024-08-18 16:51:41Z INFO JobRunner] Starting the job execution context.
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:41Z INFO JobRunner] Validating directory permissions for: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Tools': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tool'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:41Z INFO HostContext] Well known directory 'Temp': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_temp'
+[2024-08-18 16:51:41Z INFO JobRunner] Creating task server with https://dev.azure.com/az-charles/
+[2024-08-18 16:51:41Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:41Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b44120b9-4f64-5e26-ee93-474453e85609', success rate: 1/1.
+[2024-08-18 16:51:42Z INFO JobRunner] Getting job extension.
+[2024-08-18 16:51:42Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.IJobExtension'
+[2024-08-18 16:51:42Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.BuildJobExtension, Agent.Worker
+[2024-08-18 16:51:42Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Release.ReleaseJobExtension, Agent.Worker
+[2024-08-18 16:51:42Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Release.DeploymentJobExtension, Agent.Worker
+[2024-08-18 16:51:42Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Maintenance.MaintenanceJobExtension, Agent.Worker
+[2024-08-18 16:51:42Z INFO JobRunner] Initialize job. Getting all job steps.
+[2024-08-18 16:51:42Z INFO BuildJobExtension] Image version for job id b44120b9-4f64-5e26-ee93-474453e85609 is not set
+[2024-08-18 16:51:42Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:43Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2921e022-2af8-404e-9fa5-e0a963ab648a', success rate: 1/1.
+[2024-08-18 16:51:44Z INFO BuildJobExtension] Run initial step from extension BuildJobExtension.
+[2024-08-18 16:51:44Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.Build.ISourceProvider'
+[2024-08-18 16:51:44Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.ExternalGitSourceProvider, Agent.Worker
+[2024-08-18 16:51:44Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.GitHubSourceProvider, Agent.Worker
+[2024-08-18 16:51:44Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.GitHubEnterpriseSourceProvider, Agent.Worker
+[2024-08-18 16:51:44Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.BitbucketSourceProvider, Agent.Worker
+[2024-08-18 16:51:44Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.SvnSourceProvider, Agent.Worker
+[2024-08-18 16:51:44Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.TfsGitSourceProvider, Agent.Worker
+[2024-08-18 16:51:44Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.TfsVCSourceProvider, Agent.Worker
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO BuildDirectoryManager] Checking if artifacts directory exists: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/1/a'
+[2024-08-18 16:51:44Z INFO BuildDirectoryManager] Creating artifacts directory.
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO BuildDirectoryManager] Checking if test results directory exists: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/1/TestResults'
+[2024-08-18 16:51:44Z INFO BuildDirectoryManager] Creating test results directory.
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO BuildDirectoryManager] Set repository path for repository self to '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/1/s'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO BuildJobExtension] Checking repository name self
+[2024-08-18 16:51:44Z INFO BuildJobExtension] Downloading task definitions.
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known config file 'TaskExceptionList': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin/tasks-exception-list.json'
+[2024-08-18 16:51:44Z INFO TaskManager] Skip download checkout task.
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Tasks': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks'
+[2024-08-18 16:51:44Z INFO TaskManager] Ensuring task exists: ID 'd9bafed4-0b18-4f58-968d-86655b4d2ce9', version '2.237.1', name 'CmdLine', directory '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks/CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9/2.237.1'.
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Tasks': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks'
+[2024-08-18 16:51:44Z INFO BuildJobExtension] Downloading Node 6 runner.
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:44Z INFO HostContext] Well known directory 'Externals': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/externals'
+[2024-08-18 16:51:44Z INFO NodeJsUtil] Node 6 runner already exist.
+[2024-08-18 16:51:44Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2921e022-2af8-404e-9fa5-e0a963ab648a', success rate: 1/1.
+[2024-08-18 16:51:44Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:45Z INFO BuildJobExtension] Parsing all task's condition inputs.
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Tasks': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Tasks': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'TaskZips': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_taskzips'
+[2024-08-18 16:51:45Z INFO TaskManager] Loading task definition '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks/CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9/2.237.1/task.json'.
+[2024-08-18 16:51:45Z INFO BuildJobExtension] Adding pre-job step from extension.
+[2024-08-18 16:51:45Z INFO BuildJobExtension] Adding post-job step from extension.
+[2024-08-18 16:51:45Z INFO BuildJobExtension] Adding post-job steps from tasks.
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   File name: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin/Agent.PluginHost'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Arguments: 'log "5211cf15-3ea5-4797-9679-b09fd7a6f87d"'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'True'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'True'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:51:45Z INFO ProcessInvokerWrapper] Process started with process id 66808, waiting for process exit.
+[2024-08-18 16:51:45Z INFO AgentLogPlugin] Send serialized context through STDIN
+[2024-08-18 16:51:45Z INFO BuildJobExtension] Total accessible running process: 239.
+[2024-08-18 16:51:45Z INFO JobRunner] Total job steps: 3.
+[2024-08-18 16:51:45Z INFO JobRunner] Run all job steps.
+[2024-08-18 16:51:45Z INFO AsyncCommandContext] Start flush buffered output.
+[2024-08-18 16:51:45Z INFO AsyncCommandContext] Finsh flush buffered output.
+[2024-08-18 16:51:45Z INFO AsyncCommandContext] Wait till async command task to finish.
+[2024-08-18 16:51:45Z INFO StepsRunner] Caught exception from async command DetectDockerContainer: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/1/cgroup'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadLines(String path)
+   at Agent.Sdk.PlatformUtil.DetectDockerContainer() in /Users/runner/work/1/s/src/Agent.Sdk/Util/PlatformUtil.cs:line 407
+   at Microsoft.VisualStudio.Services.Agent.Worker.JobRunner.<>c__DisplayClass4_0.<RunAsync>b__3() in /Users/runner/work/1/s/src/Agent.Worker/JobRunner.cs:line 189
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.VisualStudio.Services.Agent.Worker.AsyncCommandContext.WaitAsync() in /Users/runner/work/1/s/src/Agent.Worker/AsyncCommandContext.cs:line 130
+   at Microsoft.VisualStudio.Services.Agent.Worker.StepsRunner.RunAsync(IExecutionContext jobContext, IList`1 steps) in /Users/runner/work/1/s/src/Agent.Worker/StepsRunner.cs:line 65
+[2024-08-18 16:51:45Z INFO AsyncCommandContext] Start flush buffered output.
+[2024-08-18 16:51:45Z INFO AsyncCommandContext] Finsh flush buffered output.
+[2024-08-18 16:51:45Z INFO AsyncCommandContext] Wait till async command task to finish.
+[2024-08-18 16:51:45Z INFO StepsRunner] Caught exception from async command DetectDockerContainer: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/1/cgroup'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadLines(String path)
+   at Agent.Sdk.PlatformUtil.DetectDockerContainer() in /Users/runner/work/1/s/src/Agent.Sdk/Util/PlatformUtil.cs:line 407
+   at Microsoft.VisualStudio.Services.Agent.Worker.JobRunner.<>c__DisplayClass4_0.<RunAsync>b__3() in /Users/runner/work/1/s/src/Agent.Worker/JobRunner.cs:line 189
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.VisualStudio.Services.Agent.Worker.AsyncCommandContext.WaitAsync() in /Users/runner/work/1/s/src/Agent.Worker/AsyncCommandContext.cs:line 130
+   at Microsoft.VisualStudio.Services.Agent.Worker.StepsRunner.RunAsync(IExecutionContext jobContext, IList`1 steps) in /Users/runner/work/1/s/src/Agent.Worker/StepsRunner.cs:line 65
+[2024-08-18 16:51:45Z INFO StepsRunner] Processing step: DisplayName='Checkout cxharles/Task-Master-Pro@main to s', ContinueOnError=False, Enabled=True
+[2024-08-18 16:51:45Z INFO ExpressionManager] Evaluating: SucceededNode()
+[2024-08-18 16:51:45Z INFO ExpressionManager] Result: True
+[2024-08-18 16:51:45Z INFO StepsRunner] Starting the step.
+[2024-08-18 16:51:45Z INFO TaskRunner] Allow publishing telemetry for Checkout@1.0.0 task: True
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:45Z INFO HostContext] Well known directory 'Tasks': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks'
+[2024-08-18 16:51:45Z INFO TaskRunner] Get handler data for target platform OSX
+[2024-08-18 16:51:45Z INFO TaskRunner] Handler data is of type Microsoft.VisualStudio.Services.Agent.Worker.AgentPluginHandlerData
+[2024-08-18 16:51:45Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2921e022-2af8-404e-9fa5-e0a963ab648a', success rate: 1/1.
+[2024-08-18 16:51:45Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b44120b9-4f64-5e26-ee93-474453e85609', success rate: 1/1.
+[2024-08-18 16:51:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '19c3a4d5-6dc7-5f63-50ac-a1d7a7fa772a', success rate: 1/1.
+[2024-08-18 16:51:46Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.IWorkerCommandExtension'
+[2024-08-18 16:51:46Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.TaskCommandExtension, Agent.Worker
+[2024-08-18 16:51:46Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.ArtifactCommandExtension, Agent.Worker
+[2024-08-18 16:51:46Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.BuildCommandExtension, Agent.Worker
+[2024-08-18 16:51:46Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.CodeCoverage.CodeCoverageCommandExtension, Agent.Worker
+[2024-08-18 16:51:46Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.TestResults.ResultsCommandExtension, Agent.Worker
+[2024-08-18 16:51:46Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Telemetry.TelemetryCommandExtension, Agent.Worker
+[2024-08-18 16:51:46Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Release.ReleaseCommandExtension, Agent.Worker
+[2024-08-18 16:51:46Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.PluginInternalCommandExtension, Agent.Worker
+[2024-08-18 16:51:46Z INFO WorkerCommandManager] Register command extension for area task
+[2024-08-18 16:51:46Z INFO WorkerCommandManager] Register command extension for area artifact
+[2024-08-18 16:51:46Z INFO WorkerCommandManager] Register command extension for area build
+[2024-08-18 16:51:46Z INFO WorkerCommandManager] Register command extension for area codecoverage
+[2024-08-18 16:51:46Z INFO WorkerCommandManager] Register command extension for area results
+[2024-08-18 16:51:46Z INFO WorkerCommandManager] Register command extension for area telemetry
+[2024-08-18 16:51:46Z INFO WorkerCommandManager] Register command extension for area release
+[2024-08-18 16:51:46Z INFO WorkerCommandManager] Register command extension for area plugininternal
+[2024-08-18 16:51:46Z INFO AgentPluginHandler] Handler.AfterExecutionContextInitialized _continueAfterCancelProcessTreeKillAttempt = True
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.Repository.CheckoutTask, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id '6d15af64-176c-496d-b583-fd2ae21d4df4' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.Repository.CleanupTask, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id '6d15af64-176c-496d-b583-fd2ae21d4df4' (post).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTask, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.PublishPipelineArtifactTask, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id 'ecdc45f6-832d-4ad9-b52b-ee49e94659be' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.PublishPipelineArtifactTaskV1, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id 'ecdc45f6-832d-4ad9-b52b-ee49e94659be' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV1, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV1_1_0, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineCache.SavePipelineCacheV0, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id 'd53ccab4-555e-4494-9d06-11db043fb4a9' (post).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineCache.RestorePipelineCacheV0, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id 'd53ccab4-555e-4494-9d06-11db043fb4a9' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV1_1_1, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV1_1_2, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV1_1_3, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV2_0_0, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.PublishPipelineArtifactTaskV0_140_0, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id 'ecdc45f6-832d-4ad9-b52b-ee49e94659be' (main).
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.BuildArtifacts.DownloadBuildArtifactTaskV1_0_0, Agent.Plugins'.
+[2024-08-18 16:51:46Z INFO AgentPluginManager] Loaded task plugin id 'a433f589-fce1-4460-9ee6-44a624aeb1fb' (main).
+[2024-08-18 16:51:46Z INFO WorkerCommandManager] Enable plugin internal command extension.
+[2024-08-18 16:51:46Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:46Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:46Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:46Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   File name: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin/Agent.PluginHost'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Arguments: 'task "Agent.Plugins.Repository.CheckoutTask, Agent.Plugins"'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'True'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper] Process started with process id 66809, waiting for process exit.
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper] Close STDIN after the first redirect finished.
+[2024-08-18 16:51:46Z INFO ProcessInvokerWrapper] STDIN stream write finished.
+[2024-08-18 16:51:46Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:46Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:47Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:47Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:47Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:48Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:48Z INFO HostContext] Setting up value for origin: TaskSetSecretCommand
+[2024-08-18 16:51:48Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:48Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '19c3a4d5-6dc7-5f63-50ac-a1d7a7fa772a', success rate: 1/1.
+[2024-08-18 16:51:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:51:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:51:48Z INFO ProcessInvokerWrapper] Exited process 66809 with exit code 0
+[2024-08-18 16:51:49Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:49Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:49Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-08-18 16:51:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '19c3a4d5-6dc7-5f63-50ac-a1d7a7fa772a', success rate: 1/1.
+[2024-08-18 16:51:50Z INFO HostContext] Setting up value for origin: Variables_Set_repoUrlWithCred
+[2024-08-18 16:51:50Z INFO ProcessInvokerWrapper] Finished process 66809 with exit code 0, and elapsed time 00:00:03.4842445.
+[2024-08-18 16:51:50Z INFO WorkerCommandManager] Disable plugin internal command extension.
+[2024-08-18 16:51:50Z INFO StepsRunner] Step result: 
+[2024-08-18 16:51:50Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-08-18 16:51:50Z INFO StepsRunner] Current state: job state = ''
+[2024-08-18 16:51:50Z INFO StepsRunner] Processing step: DisplayName='Run Terraform', ContinueOnError=False, Enabled=True
+[2024-08-18 16:51:50Z INFO ExpressionManager] Evaluating: SucceededNode()
+[2024-08-18 16:51:50Z INFO ExpressionManager] Result: True
+[2024-08-18 16:51:50Z INFO StepsRunner] Starting the step.
+[2024-08-18 16:51:50Z INFO TaskRunner] Allow publishing telemetry for CmdLine@2.237.1 task: True
+[2024-08-18 16:51:50Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:50Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:50Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:50Z INFO HostContext] Well known directory 'Tasks': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks'
+[2024-08-18 16:51:50Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:50Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:50Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:51:50Z INFO HostContext] Well known directory 'TaskZips': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_taskzips'
+[2024-08-18 16:51:50Z INFO TaskManager] Loading task definition '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks/CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9/2.237.1/task.json'.
+[2024-08-18 16:51:50Z INFO TaskRunner] Get handler data for target platform OSX
+[2024-08-18 16:51:50Z INFO TaskRunner] Handler data is of type Microsoft.VisualStudio.Services.Agent.Worker.Node20_1HandlerData
+[2024-08-18 16:51:50Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:51:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '19c3a4d5-6dc7-5f63-50ac-a1d7a7fa772a', success rate: 1/1.
+[2024-08-18 16:51:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:51:50Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:51:51Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.IJobExtension'
+[2024-08-18 16:51:51Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.Build.ISourceProvider'
+[2024-08-18 16:51:51Z INFO BuildJobExtension] Build JobExtension resolving path use source provide: 
+[2024-08-18 16:51:51Z INFO BuildJobExtension] The Default Path Root of Build JobExtension is repository.path: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/1/s
+[2024-08-18 16:51:51Z INFO BuildJobExtension] After prefix Default Path Root provide by JobExtension: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/1/s
+[2024-08-18 16:51:51Z INFO BuildJobExtension] Return absolute path after prefix DefaultPathRoot: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/1/s
+[2024-08-18 16:51:51Z INFO TaskRunner] Build JobExtension resolved a rooted path:: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/1/s
+[2024-08-18 16:51:51Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-08-18 16:51:51Z INFO NodeHandler] Handler.AfterExecutionContextInitialized _continueAfterCancelProcessTreeKillAttempt = True
+[2024-08-18 16:51:51Z INFO TaskRunner] Current handler is Node. Trying to determing the SDK version.
+[2024-08-18 16:51:51Z INFO TaskRunner] Node SDK version: 4.10.1. Correlation ID is required: True.
+[2024-08-18 16:51:51Z INFO NodeHandler] AZP_AGENT_IGNORE_VSTSTASKLIB enabled, ignoring fix
+[2024-08-18 16:51:51Z INFO NodeHandler] Task.json has node20_1 handler data: True node20ResultsInGlibCError = False
+[2024-08-18 16:51:51Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:51Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:51Z INFO HostContext] Well known directory 'Externals': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/externals'
+[2024-08-18 16:51:51Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:51:51Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:51:51Z INFO HostContext] Well known directory 'Externals': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/externals'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   File name: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/externals/node20_1/bin/node'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Arguments: '"/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks/CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9/2.237.1/cmdline.js"'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/1/s'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'True'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:51:51Z INFO ProcessInvokerWrapper] Process started with process id 66843, waiting for process exit.
+[2024-08-18 16:51:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:51:52Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:51:52Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:51:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:51:57Z INFO JobServerQueue] Stop aggressive process web console line queue.
+[2024-08-18 16:51:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:57Z INFO ExecutionContext] Force finish current task in 5 sec.
+[2024-08-18 16:52:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:52:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:52:57Z INFO ProcessInvokerWrapper] Exited process 66843 with exit code 0
+[2024-08-18 16:52:57Z INFO ProcessInvokerWrapper] Finished process 66843 with exit code 0, and elapsed time 00:01:06.6263012.
+[2024-08-18 16:52:57Z INFO StepsRunner] Step result: Failed
+[2024-08-18 16:52:57Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2024-08-18 16:52:57Z INFO StepsRunner] Current state: job state = 'Failed'
+[2024-08-18 16:52:57Z INFO StepsRunner] Processing step: DisplayName='Checkout cxharles/Task-Master-Pro@main to s', ContinueOnError=False, Enabled=True
+[2024-08-18 16:52:57Z INFO ExpressionManager] Evaluating: AlwaysNode()
+[2024-08-18 16:52:57Z INFO ExpressionManager] Result: True
+[2024-08-18 16:52:57Z INFO StepsRunner] Starting the step.
+[2024-08-18 16:52:57Z INFO TaskRunner] Allow publishing telemetry for Checkout@1.0.0 task: True
+[2024-08-18 16:52:57Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:52:57Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:52:57Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:52:57Z INFO HostContext] Well known directory 'Tasks': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_tasks'
+[2024-08-18 16:52:57Z INFO TaskRunner] Get handler data for target platform OSX
+[2024-08-18 16:52:57Z INFO TaskRunner] Handler data is of type Microsoft.VisualStudio.Services.Agent.Worker.AgentPluginHandlerData
+[2024-08-18 16:52:57Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-08-18 16:52:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:58Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-08-18 16:52:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '43542e4f-acc2-5a42-5433-d691ccc99a55', success rate: 1/1.
+[2024-08-18 16:52:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2942cb6c-c63e-4556-84b2-06b531ca9c8b', success rate: 1/1.
+[2024-08-18 16:52:59Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-08-18 16:52:59Z INFO AgentPluginHandler] Handler.AfterExecutionContextInitialized _continueAfterCancelProcessTreeKillAttempt = True
+[2024-08-18 16:52:59Z INFO WorkerCommandManager] Enable plugin internal command extension.
+[2024-08-18 16:52:59Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:52:59Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:52:59Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:52:59Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   File name: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin/Agent.PluginHost'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Arguments: 'task "Agent.Plugins.Repository.CleanupTask, Agent.Plugins"'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'True'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper] Process started with process id 66885, waiting for process exit.
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper] Close STDIN after the first redirect finished.
+[2024-08-18 16:52:59Z INFO ProcessInvokerWrapper] STDIN stream write finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Exited process 66885 with exit code 0
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Finished process 66885 with exit code 0, and elapsed time 00:00:01.0981161.
+[2024-08-18 16:53:00Z INFO WorkerCommandManager] Disable plugin internal command extension.
+[2024-08-18 16:53:00Z INFO StepsRunner] Step result: 
+[2024-08-18 16:53:00Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-08-18 16:53:00Z INFO StepsRunner] Current state: job state = 'Failed'
+[2024-08-18 16:53:00Z INFO JobRunner] Finalize job.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Send instruction code through STDIN to stop plugin host
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Waiting for plugin host exit
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Start output buffer monitor.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Start process task for plugin 'TestResultLogParser'
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Start process task for plugin 'TestFilePublisher'
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] TestFilePublisher: Skip process outputs base on plugin initialize result.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] TestFilePublisher: Process remaining outputs after job finished.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Job has finished, start shutting down log output processing process.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Wait for all plugins finish process outputs.
+[2024-08-18 16:53:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2942cb6c-c63e-4556-84b2-06b531ca9c8b', success rate: 1/1.
+[2024-08-18 16:53:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '806faadb-4ae3-4963-8bba-e860b011d8f9', success rate: 1/1.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Exited process 66808 with exit code 0
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDIN stream write finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Finished process 66808 with exit code 0, and elapsed time 00:01:15.2785061.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] TestResultLogParser: Process remaining outputs after job finished.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Plugin 'TestResultLogParser' finished log process.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Plugin 'TestFilePublisher' finished log process.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Output buffer monitor stopped.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Start finalize for plugin 'TestResultLogParser'
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Skip finalize for short circuited plugin 'TestFilePublisher'
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Wait for all plugins finish finalization.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] Plugin 'TestResultLogParser' finished job finalize.
+[2024-08-18 16:53:00Z INFO AgentLogPlugin] All plugins finished finalization.
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Work': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work'
+[2024-08-18 16:53:00Z INFO BuildJobExtension] Total accessible running process: 190.
+[2024-08-18 16:53:00Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66886 (dmd)
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Read env from output of `ps e -p 66886 -o command`
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66886 -o command'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Process started with process id 66887, waiting for process exit.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Exited process 66887 with exit code 0
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Finished process 66887 with exit code 0, and elapsed time 00:00:00.0393075.
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Successfully dump environment variables for 66886
+[2024-08-18 16:53:00Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66883 (mdworker_shared)
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Read env from output of `ps e -p 66883 -o command`
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66883 -o command'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Process started with process id 66888, waiting for process exit.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Exited process 66888 with exit code 0
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Finished process 66888 with exit code 0, and elapsed time 00:00:00.0336549.
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Successfully dump environment variables for 66883
+[2024-08-18 16:53:00Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66882 (mdworker_shared)
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Read env from output of `ps e -p 66882 -o command`
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66882 -o command'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Process started with process id 66889, waiting for process exit.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Exited process 66889 with exit code 0
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Finished process 66889 with exit code 0, and elapsed time 00:00:00.0296592.
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Successfully dump environment variables for 66882
+[2024-08-18 16:53:00Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66881 (ScreenTimeAgent)
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Read env from output of `ps e -p 66881 -o command`
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66881 -o command'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Process started with process id 66890, waiting for process exit.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Exited process 66890 with exit code 0
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Finished process 66890 with exit code 0, and elapsed time 00:00:00.0320051.
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Successfully dump environment variables for 66881
+[2024-08-18 16:53:00Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66880 (BiomeAgent)
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Read env from output of `ps e -p 66880 -o command`
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66880 -o command'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Process started with process id 66891, waiting for process exit.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Exited process 66891 with exit code 0
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Finished process 66891 with exit code 0, and elapsed time 00:00:00.0288027.
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Successfully dump environment variables for 66880
+[2024-08-18 16:53:00Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66879 (ContextStoreAge)
+[2024-08-18 16:53:00Z INFO ProcessExtensions] Read env from output of `ps e -p 66879 -o command`
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:00Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66879 -o command'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:00Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66892, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66892 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66892 with exit code 0, and elapsed time 00:00:00.0271450.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66879
+[2024-08-18 16:53:01Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66878 (Keychain Circle)
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Read env from output of `ps e -p 66878 -o command`
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66878 -o command'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66893, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66893 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66893 with exit code 0, and elapsed time 00:00:00.0327007.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66878
+[2024-08-18 16:53:01Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66873 (replayd)
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Read env from output of `ps e -p 66873 -o command`
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66873 -o command'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66894, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66894 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66894 with exit code 0, and elapsed time 00:00:00.0334182.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66873
+[2024-08-18 16:53:01Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66872 (businessservice)
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Read env from output of `ps e -p 66872 -o command`
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66872 -o command'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66895, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66895 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66895 with exit code 0, and elapsed time 00:00:00.0289433.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66872
+[2024-08-18 16:53:01Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66870 (tccd)
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Read env from output of `ps e -p 66870 -o command`
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66870 -o command'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66896, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66896 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66896 with exit code 0, and elapsed time 00:00:00.0286267.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66870
+[2024-08-18 16:53:01Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66867 (triald)
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Read env from output of `ps e -p 66867 -o command`
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66867 -o command'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66897, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66897 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66897 with exit code 0, and elapsed time 00:00:00.0328275.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66867
+[2024-08-18 16:53:01Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66865 (contentlinkingd)
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Read env from output of `ps e -p 66865 -o command`
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66865 -o command'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66898, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '806faadb-4ae3-4963-8bba-e860b011d8f9', success rate: 1/1.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66898 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66898 with exit code 0, and elapsed time 00:00:00.0336656.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66865
+[2024-08-18 16:53:01Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66864 (com.apple.hiser)
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Read env from output of `ps e -p 66864 -o command`
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66864 -o command'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66899, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66899 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66899 with exit code 0, and elapsed time 00:00:00.0338593.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66864
+[2024-08-18 16:53:01Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66863 (Siri)
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Read env from output of `ps e -p 66863 -o command`
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66863 -o command'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66900, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66900 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66900 with exit code 0, and elapsed time 00:00:00.0340866.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66863
+[2024-08-18 16:53:01Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66830 (mdworker_shared)
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Read env from output of `ps e -p 66830 -o command`
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66830 -o command'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66901, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66901 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66901 with exit code 0, and elapsed time 00:00:00.0312260.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66830
+[2024-08-18 16:53:01Z INFO BuildJobExtension] Inspecting process environment variables. PID: 66816 (mdworker_shared)
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Read env from output of `ps e -p 66816 -o command`
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Bin': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/bin'
+[2024-08-18 16:53:01Z INFO HostContext] Well known directory 'Root': '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 66816 -o command'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Working directory: '/Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Process started with process id 66902, waiting for process exit.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Exited process 66902 with exit code 0
+[2024-08-18 16:53:01Z INFO ProcessInvokerWrapper] Finished process 66902 with exit code 0, and elapsed time 00:00:00.0338927.
+[2024-08-18 16:53:01Z INFO ProcessExtensions] Successfully dump environment variables for 66816
+[2024-08-18 16:53:01Z INFO JobRunner] Job result after all job steps finish: Failed
+[2024-08-18 16:53:01Z INFO JobRunner] Completing the job execution context.
+[2024-08-18 16:53:01Z INFO JobRunner] Shutting down the job server queue.
+[2024-08-18 16:53:01Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2024-08-18 16:53:01Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-08-18 16:53:02Z INFO JobServerQueue] All queue process task stopped.
+[2024-08-18 16:53:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '806faadb-4ae3-4963-8bba-e860b011d8f9', success rate: 1/1.
+[2024-08-18 16:53:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b44120b9-4f64-5e26-ee93-474453e85609', success rate: 1/1.
+[2024-08-18 16:53:03Z INFO JobServerQueue] Web console line queue drained.
+[2024-08-18 16:53:03Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2024-08-18 16:53:04Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2024-08-18 16:53:04Z INFO JobServerQueue] File upload queue drained.
+[2024-08-18 16:53:04Z INFO JobServerQueue] Timeline update queue drained.
+[2024-08-18 16:53:04Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2024-08-18 16:53:04Z INFO TempDirectoryManager] Cleaning agent temp folder: /Users/itohanfavour/Desktop/Azure-Infra/Task-Master-Pro/azure-Tf-Infra/myagent/_work/_temp
+[2024-08-18 16:53:04Z INFO JobRunner] Raising job completed event.
+[2024-08-18 16:53:04Z INFO Worker] Job completed.

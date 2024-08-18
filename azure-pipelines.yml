@@ -73,7 +73,7 @@ stages:
         terraform import azurerm_resource_group.az-test /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg
         terraform import azurerm_storage_account.storage_account /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg/providers/Microsoft.Storage/storageAccounts/charleslandmark2023
         terraform import azurerm_container_group.az-test-container /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg/providers/Microsoft.ContainerInstance/containerGroups/taskmaster
-
+        terraform import azurerm_storage_container.storage_container https://charleslandmark2023.blob.core.windows.net/prod-tfstate
 
         terraform apply -input=false --auto-approve
 
