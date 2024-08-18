@@ -29,3 +29,9 @@ variable "storage_container_name" {
 variable "container_access_type" {
 
 }
+
+variable "imagebuild" {
+  type        = string
+  description = "Latest Image Build"
+  default     = "latest"
+}

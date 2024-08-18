@@ -1,6 +1,6 @@
 rgname                   = "project_rg"
 location                 = "canadacentral"
-container_name           = "task_master_container"
+container_name           = "taskmaster"
 storage_account_name     = "charleslandmark2023"
 account_tier             = "Standard"
 account_replication_type = "LRS"

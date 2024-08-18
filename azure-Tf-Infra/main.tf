@@ -14,12 +14,12 @@ resource "azurerm_container_group" "az-test-container" {
 
   container {
     name   = "task-master-pro"
-    image  = "charlesjatto/taskmaster"
+    image  = "charlesjatto/myapp:${var.imagebuild}"
     cpu    = "0.5"
     memory = "1.5"
 
     ports {
-      port     = 8080
+      port     = 80
       protocol = "TCP"
     }
   }
