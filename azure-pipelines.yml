@@ -5,7 +5,7 @@ pool:
   name: Jatto
 
 steps:
-- 
+
 - task: SonarQubePrepare@6
   inputs:
     SonarQube: 'sonar'
