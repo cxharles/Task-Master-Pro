@@ -1,115 +1,25 @@
-# Docker
-# Build a Docker image
-# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
-
 trigger:
 - main
 
-resources:
-- repo: self
+pool:
+  name: Jatto
 
-variables:
-  tag: '$(Build.BuildId)'
+steps:
+- 
+- task: SonarQubePrepare@6
+  inputs:
+    SonarQube: 'sonar'
+    scannerMode: 'CLI'
+    cliVersion: '4.8'
+    configMode: 'manual'
+    cliProjectKey: 'p1'
+    cliProjectName: 'p1'
+    cliSources: '.'
 
-stages:
-- stage: Build
-  displayName: Build image
-  jobs:
-  - job: Build
-    displayName: Build
+- task: SonarQubePublish@6
+  inputs:
+    pollingTimeoutSec: '300'
 
-    pool:
-      name: task-master
-
-    steps:
-    - task: Maven@4
-      inputs:
-        mavenPomFile: 'pom.xml'
-        goals: 'test'
-        publishJUnitResults: false
-        javaHomeOption: 'JDKVersion'
-        mavenVersionOption: 'Default'
-        mavenAuthenticateFeed: false
-        effectivePomSkip: false
-        sonarQubeRunAnalysis: false
-    
-    - task: Maven@4
-      inputs:
-        mavenPomFile: 'pom.xml'
-        publishJUnitResults: false
-        javaHomeOption: 'JDKVersion'
-        mavenVersionOption: 'Default'
-        mavenAuthenticateFeed: false
-        effectivePomSkip: false
-        sonarQubeRunAnalysis: false
-    - task: Docker@2
-      inputs:
-        containerRegistry: 'taskmasterdockerhub'
-        repository: 'charlesjatto/myapp'
-        command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
-        tags: |
-          $(tag)
-
-- stage: Provision
-  displayName: 'Terraforming on Azure...'
-  dependsOn: Build
-  jobs:
-  - job: Provision
-    displayName: 'Provisioning Container Instance'
-    pool:
-      name: task-master
-    variables: 
-    - group: TeraformEnvVars
-    steps:
-    - script: |
-        set -e
-        cd azure-Tf-Infra
-
-        # Initialize Terraform
-        terraform init -input=false
-
-        # Import the existing resource group using variables
-        terraform import azurerm_resource_group.az-test /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg
-        terraform import azurerm_storage_account.storage_account /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg/providers/Microsoft.Storage/storageAccounts/charleslandmark2023
-        terraform import azurerm_container_group.az-test-container /subscriptions/$(ARM_SUBSCRIPTION_ID)/resourceGroups/project_rg/providers/Microsoft.ContainerInstance/containerGroups/taskmaster
-        terraform import azurerm_storage_container.storage_container https://charleslandmark2023.blob.core.windows.net/prod-tfstate
-
-        terraform apply -input=false --auto-approve
-
-      name: 'RunTerraform'
-      displayName: 'Run Terraform'
-      env:
-        ARM_CLIENT_ID: $(ARM_CLIENT_ID)
-        ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
-        ARM_TENANT_ID: $(ARM_TENANT_ID)
-        ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
-        TF_VAR_imagebuild: $(tag)
-
-- stage: Destroy
-  displayName: 'Destroying Terraform Infrastructure'
-  dependsOn: Provision
-  jobs:
-  - job: Destroy
-    displayName: 'Destroy Infrastructure'
-    pool:
-      name: task-master
-    variables:
-    - group: TeraformEnvVars
-    steps:
-    - script: |
-        set -e
-        cd azure-Tf-Infra
-
-        # Initialize Terraform
-        terraform init -input=false
-
-        terraform destroy -input=false --auto-approve
-      name: 'RunTerraformDestroy'
-      displayName: 'Run Terraform Destroy'
-      env:
-        ARM_CLIENT_ID: $(ARM_CLIENT_ID)
-        ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
-        ARM_TENANT_ID: $(ARM_TENANT_ID)
-        ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
-        TF_VAR_imagebuild: $(tag)
+- task: SonarQubeAnalyze@6
+  inputs:
+    jdkversion: 'JAVA_HOME'
