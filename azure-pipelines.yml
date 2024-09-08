@@ -6,20 +6,21 @@ pool:
 
 steps:
 
-- task: SonarQubePrepare@6
+- task: Maven@4
   inputs:
-    SonarQube: 'sonar'
-    scannerMode: 'CLI'
-    cliVersion: '4.8'
-    configMode: 'manual'
-    cliProjectKey: 'p1'
-    cliProjectName: 'p1'
-    cliSources: '.'
+    mavenPomFile: 'pom.xml'
+    goals: 'clean package'
+    publishJUnitResults: false
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
 
-- task: SonarQubePublish@6
+- task: Docker@2
   inputs:
-    pollingTimeoutSec: '300'
-
-- task: SonarQubeAnalyze@6
-  inputs:
-    jdkversion: 'JAVA_HOME'
+    containerRegistry: 'docker'
+    repository: 'charlesjatto/task-project'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+    tags: 'latest'
